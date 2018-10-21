@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Inventory App</string>
+
+    <string name="category_product">Product</string>
+    <string name="category_quantity">Quantity</string>
+    <string name="category_supplier">Supplier</string>
+
+    <string name="hint_product_name">Name</string>
+    <string name="hint_product_price">Price</string>
+    <string name="hint_product_quantity">0</string>
+    <string name="hint_supplier_phone">Phone</string>
+    <string name="hint_supplier_name">Name</string>
+
+    <string name="action_insert_item">Insert item</string>
+    <string name="action_delete_all">Delete all items</string>
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+
+    <string name="product_name">%s</string>
+    <string name="product_price">Price: ₹%d</string>
+    <string name="product_quantity">Qty: %d</string>
+    <string name="supplier_name">Supplier: %s</string>
+    <string name="supplier_phone">Phone: %d</string>
+
+    <string name="empty_state_text"><b>Nothing found!</b>\nPlease add item to view them</string>
+    <string name="total_items">Total no of items: %d</string>
+    <string name="content">%d - <b>%s</b> - %d - %d - %s - %d\n </string>
+
+</resources>
