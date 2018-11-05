@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".EditorActivity"
-    tools:ignore="Autofill">
+    tools:context=".EditorActivity">
 
     <LinearLayout
         android:id="@+id/container_product"
@@ -32,7 +31,7 @@
             android:layout_weight="2"
             android:orientation="vertical">
 
-            <EditText
+            <AutoCompleteTextView
                 android:id="@+id/edit_product_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -41,7 +40,7 @@
                 android:textAppearance="?android:textAppearanceMedium" />
 
 
-            <EditText
+            <AutoCompleteTextView
                 android:id="@+id/edit_product_price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -76,15 +75,27 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <EditText
-                android:id="@+id/edit_product_quantity"
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/edit_product_quantity_inc"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
-                android:hint="@string/hint_product_quantity"
-                android:inputType="number"
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/edit_product_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/hint_product_quantity"
                 android:textAppearance="?android:textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/edit_product_quantity_dec"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="-" />
 
         </LinearLayout>
 
@@ -115,7 +126,7 @@
             android:layout_weight="2"
             android:orientation="vertical">
 
-            <EditText
+            <AutoCompleteTextView
                 android:id="@+id/edit_supplier_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -124,7 +135,7 @@
                 android:textAppearance="?android:textAppearanceMedium" />
 
 
-            <EditText
+            <AutoCompleteTextView
                 android:id="@+id/edit_supplier_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

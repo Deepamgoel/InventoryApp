@@ -25,5 +25,42 @@
     <string name="empty_state_text"><b>Nothing found!</b>\nPlease add item to view them</string>
     <string name="total_items">Total no of items: %d</string>
     <string name="content">%d - <b>%s</b> - %d - %d - %s - %d\n </string>
+    <string name="item_button_buy">buy</string>
+    <string name="item_button_out_of_stock">Out of stock</string>
+
+    <!-- Dialog message when user is leaving editor but hasn't saved changes [CHAR LIMIT=NONE] -->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a user's changes [CHAR LIMIT=20] -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current item [CHAR LIMIT=20] -->
+    <string name="keep_editing">Keep Editing</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current item [CHAR LIMIT=NONE] -->
+    <string name="delete_dialog_msg">Delete this item?</string>
+
+    <!-- Dialog button text for the option to confirm deleting the current item [CHAR LIMIT=20] -->
+    <string name="delete">Delete</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current item [CHAR LIMIT=20] -->
+    <string name="cancel">Cancel</string>
+
+    <string name="editor_update_item_failed">Error with updating item</string>
+
+    <string name="editor_update_item_successful">Item updated successfully</string>
+
+    <string name="editor_insert_item_failed">Error with saving item</string>
+
+    <string name="editor_insert_item_successful">Item saved successfully</string>
+
+    <string name="editor_delete_item_successful">Item deleted</string>
+
+    <string name="editor_delete_item_failed">Error with deleting item</string>
+
+
+    <string name="action_delete">Delete item</string>
+    <string name="editor_activity_title_edit_item">Edit item</string>
+    <string name="editor_activity_title_new_item">Add an item</string>
 
 </resources>

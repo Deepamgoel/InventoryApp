@@ -19,11 +19,16 @@
         </activity>
         <activity
             android:name=".EditorActivity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
 
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity" />
+        <provider
+            android:name=".data.InventoryProvider"
+            android:authorities="com.android.deepamgoel.inventoryapp"
+            android:exported="false" />
     </application>
 
 </manifest>
