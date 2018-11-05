@@ -50,8 +50,11 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
     AutoCompleteTextView mSupplierNameEditText;
     @BindView(R.id.edit_supplier_phone)
     AutoCompleteTextView mSupplierPhoneEditText;
+    @BindView(R.id.call_button)
+    Button mCallButton;
 
     private int quantity;
+    private int phone;
     private Uri mCurrentItemUri;
     private boolean mDataHasChanged = false;
 
@@ -103,6 +106,14 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             public void onClick(View v) {
                 quantity++;
                 mProductQuantityTextView.setText(String.format(Locale.getDefault(), "%d", quantity));
+            }
+        });
+
+        mCallButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + phone));
+                startActivity(intent);
             }
         });
     }
@@ -182,6 +193,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             int supplierPhone = cursor.getInt(supplierPhoneIndex);
 
             quantity = productQuantity;
+            phone = supplierPhone;
             mProductNameEditText.setText(productName);
             mProductPriceEditText.setText(String.format(Locale.getDefault(), "%d", productPrice));
             mProductQuantityTextView.setText(String.format(Locale.getDefault(), "%d", productQuantity));

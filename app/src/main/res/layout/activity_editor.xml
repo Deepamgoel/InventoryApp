@@ -135,13 +135,28 @@
                 android:textAppearance="?android:textAppearanceMedium" />
 
 
-            <AutoCompleteTextView
-                android:id="@+id/edit_supplier_phone"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/hint_supplier_phone"
-                android:inputType="phone"
-                android:textAppearance="?android:textAppearanceMedium" />
+                android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_supplier_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="@string/hint_supplier_phone"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/call_button"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_call_black_24dp"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
 
         </LinearLayout>
 
